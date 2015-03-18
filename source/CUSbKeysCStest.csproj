@@ -1,0 +1,201 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7945B7A5-E17C-4D51-9B71-48DD251F052C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CUsbKeysCStest</RootNamespace>
+    <AssemblyName>CUsbKeysCStest</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.02</OSVersion>
+    <DeployDirSuffix>cUSBkeysCS</DeployDirSuffix>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FormFactorID>
+    </FormFactorID>
+    <StartupObject>CUsbKeysCStest.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ManageModifiersEntriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageModifiersEntriesForm.Designer.cs">
+      <DependentUpon>ManageModifiersEntriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierKeysForm.designer.cs">
+      <DependentUpon>ModifierKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="directKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="directKeysForm.Designer.cs">
+      <DependentUpon>directKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DumpForm.Designer.cs">
+      <DependentUpon>DumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageEventNames.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageEventNames.designer.cs">
+      <DependentUpon>ManageEventNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageRotateEntriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageRotateEntriesForm.Designer.cs">
+      <DependentUpon>ManageRotateEntriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ManageModifiersEntriesForm.resx">
+      <DependentUpon>ManageModifiersEntriesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierKeysForm.resx">
+      <DependentUpon>ModifierKeysForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="directKeysForm.resx">
+      <DependentUpon>directKeysForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DumpForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DumpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEventNames.resx">
+      <DependentUpon>ManageEventNames.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageRotateEntriesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ManageRotateEntriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RotateKeysForm.resx">
+      <DependentUpon>RotateKeysForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usbkeysEventForm.resx">
+      <DependentUpon>usbkeysEventForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsbKeysForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UsbKeysForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RotateKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RotateKeysForm.designer.cs">
+      <DependentUpon>RotateKeysForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usbkeysEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usbkeysEventForm.Designer.cs">
+      <DependentUpon>usbkeysEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsbKeysForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsbKeysForm.Designer.cs">
+      <DependentUpon>UsbKeysForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="CUsbKeysCS\CUsbKeysCS\CUsbKeysCS.csproj">
+      <Project>{FB6F4507-EAF7-4CFE-B282-13481C604DFE}</Project>
+      <Name>CUsbKeysCS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v1.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.v1.targets" />
+  <Import Condition="'$(TargetFrameworkVersion)' == 'v2.0'" Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

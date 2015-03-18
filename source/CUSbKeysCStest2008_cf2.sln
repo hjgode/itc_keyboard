@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUSbKeysCStest2005", "CUSbKeysCStest2005.csproj", "{7945B7A5-E17C-4D51-9B71-48DD251F052C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CUsbKeysCS2005", "CUsbKeysCS\CUsbKeysCS\CUsbKeysCS2005.csproj", "{FB6F4507-EAF7-4CFE-B282-13481C604DFE}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7945B7A5-E17C-4D51-9B71-48DD251F052C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FB6F4507-EAF7-4CFE-B282-13481C604DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB6F4507-EAF7-4CFE-B282-13481C604DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB6F4507-EAF7-4CFE-B282-13481C604DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB6F4507-EAF7-4CFE-B282-13481C604DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

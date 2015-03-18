@@ -1,0 +1,171 @@
+Drivers\HID\ClientDrivers\ITCKeyboard\Layout\CK3\0001
+
+================================
+ShiftPlane 0
+================================
+07,00,00,00,00,00 'No Event' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,01,00,00,00,00 'Overrun Error' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,02,00,00,00,00 'POST Fail' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,03,00,00,00,00 'Error Undefined' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,04,00,00,00,1C 'a' [NoFlag,NoFlag,NormalKey,] 'a'
+07,05,00,00,00,32 'b' [NoFlag,NoFlag,NormalKey,] 'b'
+07,06,00,00,00,21 'c' [NoFlag,NoFlag,NormalKey,] 'c'
+07,07,00,00,00,23 'd' [NoFlag,NoFlag,NormalKey,] 'd'
+07,08,00,00,00,24 'e' [NoFlag,NoFlag,NormalKey,] 'e'
+07,09,00,00,00,2B 'f' [NoFlag,NoFlag,NormalKey,] 'f'
+07,0A,00,00,00,34 'g' [NoFlag,NoFlag,NormalKey,] 'g'
+07,0B,00,00,00,33 'h' [NoFlag,NoFlag,NormalKey,] 'h'
+07,0C,00,00,00,43 'i' [NoFlag,NoFlag,NormalKey,] 'i'
+07,0D,00,00,00,3B 'j' [NoFlag,NoFlag,NormalKey,] 'j'
+07,0E,00,00,00,42 'k' [NoFlag,NoFlag,NormalKey,] 'k'
+07,0F,00,00,00,4B 'l' [NoFlag,NoFlag,NormalKey,] 'l'
+07,10,00,00,00,3A 'm' [NoFlag,NoFlag,NormalKey,] 'm'
+07,11,00,00,00,31 'n' [NoFlag,NoFlag,NormalKey,] 'n'
+07,12,00,00,00,44 'o' [NoFlag,NoFlag,NormalKey,] 'o'
+07,13,00,00,00,4D 'p' [NoFlag,NoFlag,NormalKey,] 'p'
+07,14,00,00,00,15 'q' [NoFlag,NoFlag,NormalKey,] 'q'
+07,15,00,00,00,2D 'r' [NoFlag,NoFlag,NormalKey,] 'r'
+07,16,00,00,00,1B 's' [NoFlag,NoFlag,NormalKey,] 's'
+07,17,00,00,00,2C 't' [NoFlag,NoFlag,NormalKey,] 't'
+07,18,00,00,00,3C 'u' [NoFlag,NoFlag,NormalKey,] 'u'
+07,19,00,00,00,2A 'v' [NoFlag,NoFlag,NormalKey,] 'v'
+07,1A,00,00,00,1D 'w' [NoFlag,NoFlag,NormalKey,] 'w'
+07,1B,00,00,00,22 'x' [NoFlag,NoFlag,NormalKey,] 'x'
+07,1C,00,00,00,35 'y' [NoFlag,NoFlag,NormalKey,] 'y'
+07,1D,00,00,00,1A 'z' [NoFlag,NoFlag,NormalKey,] 'z'
+07,1E,00,00,00,16 '1' [NoFlag,NoFlag,NormalKey,] '1'
+07,1F,00,00,00,1E '2' [NoFlag,NoFlag,NormalKey,] '2'
+07,20,00,00,00,26 '3' [NoFlag,NoFlag,NormalKey,] '3'
+07,21,00,00,00,25 '4' [NoFlag,NoFlag,NormalKey,] '4'
+07,22,00,00,00,2E '5' [NoFlag,NoFlag,NormalKey,] '5'
+07,23,00,00,00,36 '6' [NoFlag,NoFlag,NormalKey,] '6'
+07,24,00,00,00,3D '7' [NoFlag,NoFlag,NormalKey,] '7'
+07,25,00,00,00,3E '8' [NoFlag,NoFlag,NormalKey,] '8'
+07,26,00,00,00,46 '9' [NoFlag,NoFlag,NormalKey,] '9'
+07,27,00,00,00,45 '0' [NoFlag,NoFlag,NormalKey,] '0'
+07,28,00,00,00,5A 'Return' [NoFlag,NoFlag,NormalKey,] 'Return'
+07,29,00,00,00,76 'Escape' [NoFlag,NoFlag,NormalKey,] 'Escape'
+07,2A,00,00,00,66 'Backspace' [NoFlag,NoFlag,NormalKey,] 'Backspace'
+07,2B,00,00,00,0D 'Tab' [NoFlag,NoFlag,NormalKey,] 'Tab'
+07,3A,00,42,04,06 'F1' [NoFlag,NoRepeat, NoChord,MultiKeyIndex,] 'F2' 'MultiIndex'->00,00,00,0D 'Tab' | 00,00,00,0D 'Tab' | 00,00,00,0D 'Tab' | 00,00,00,0D 'Tab' | 00,00,00,5A 'Return' | 
+07,3B,00,00,00,06 'F2' [NoFlag,NoFlag,NormalKey,] 'F2'
+07,3C,00,00,00,04 'F3' [NoFlag,NoFlag,NormalKey,] 'F3'
+07,3D,00,00,00,0C 'F4' [NoFlag,NoFlag,NormalKey,] 'F4'
+07,3E,00,00,00,03 'F5' [NoFlag,NoFlag,NormalKey,] 'F5'
+07,52,00,01,00,75 'Up Arrow' [NoFlag,Extended,NormalKey,] extended:'VK_F6' 'Keypad 8'
+07,58,00,08,00,95 'Keypad Enter' [NoFlag,VKEY,NormalKey,] 'undef 0x95'
+0C,B6,00,02,01,02 'Green Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'n/a' 'ShiftIndex'->01,02,12,02 'n/a' | 
+0C,E9,00,02,01,01 'Orange Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'F9' 'ShiftIndex'->01,02,22,01 'F9' | 
+
+================================
+ShiftPlane 1
+================================
+07,00,00,00,00,00 'No Event' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,01,00,00,00,00 'Overrun Error' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,02,00,00,00,00 'POST Fail' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,03,00,00,00,00 'Error Undefined' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,04,00,00,08,01 'a' [NoFlag,NoFlag,ModifierIndex,] 'F9' 'ModifierKey'->08,02,01,59 'Right Shift' | 
+07,05,00,00,08,02 'b' [NoFlag,NoFlag,ModifierIndex,] 'n/a' 'ModifierKey'->08,02,00,58 'Caps Lock' | 
+07,06,00,00,00,49 'c' [NoFlag,NoFlag,NormalKey,] '.'
+07,07,00,02,02,01 'd' [NoFlag,NoRepeat,NamedEventIndex,] 'F9' 'EventIndex'|'ITC_BACKLIGHT_KEY_STATE'|'ITC_BACKLIGHT_KEY_DELTA
+07,08,00,00,00,0B 'e' [NoFlag,NoFlag,NormalKey,] 'F6'
+07,09,00,00,00,83 'f' [NoFlag,NoFlag,NormalKey,] 'F7'
+07,0A,00,00,00,0A 'g' [NoFlag,NoFlag,NormalKey,] 'F8'
+07,0B,00,00,00,01 'h' [NoFlag,NoFlag,NormalKey,] 'F9'
+07,0C,00,00,00,09 'i' [NoFlag,NoFlag,NormalKey,] 'F10'
+07,0D,00,00,00,78 'j' [NoFlag,NoFlag,NormalKey,] 'F11'
+07,0E,00,00,00,07 'k' [NoFlag,NoFlag,NormalKey,] 'F12'
+07,0F,00,00,00,08 'l' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,10,00,00,00,10 'm' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,11,00,00,00,18 'n' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,12,00,00,00,20 'o' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,13,00,00,00,28 'p' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,14,00,00,00,30 'q' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,15,00,00,00,38 'r' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,16,00,00,00,40 's' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,17,00,00,00,48 't' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,18,00,00,00,50 'u' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,19,00,00,00,57 'v' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,1A,00,00,00,5F 'w' [NoFlag,NoFlag,NormalKey,] 'n/a'
+07,1B,00,20,00,4E 'x' [NoFlag,Shifted,NormalKey,] SHIFT+'-'
+07,1C,00,00,00,52 'y' [NoFlag,NoFlag,NormalKey,] '‘'
+07,1D,00,20,00,52 'z' [NoFlag,Shifted,NormalKey,] SHIFT+'‘'
+07,1F,00,01,00,72 '2' [NoFlag,Extended,NormalKey,] extended:'VK_F3' 'Keypad 2'
+07,21,00,01,00,6B '4' [NoFlag,Extended,NormalKey,] extended:'VK_ADD' 'n/a'
+07,22,00,20,00,55 '5' [NoFlag,Shifted,NormalKey,] SHIFT+'='
+07,23,00,01,00,74 '6' [NoFlag,Extended,NormalKey,] extended:'VK_F5' 'Keypad 6'
+07,25,00,01,00,75 '8' [NoFlag,Extended,NormalKey,] extended:'VK_F6' 'Keypad 8'
+07,27,00,00,00,4E '0' [NoFlag,NoFlag,NormalKey,] '-'
+07,28,00,00,00,5A 'Return' [NoFlag,NoFlag,NormalKey,] 'Return'
+07,29,00,00,08,03 'Escape' [NoFlag,NoFlag,ModifierIndex,] 'F5' 'ModifierKey'->08,02,01,11 'Left Alt' | 
+07,2A,00,08,00,2E 'Backspace' [NoFlag,VKEY,NormalKey,] 'VK_DELETE'
+07,2B,00,08,00,2D 'Tab' [NoFlag,VKEY,NormalKey,] 'VK_INSERT'
+07,3A,00,02,04,05 'F1' [NoFlag,NoRepeat,MultiKeyIndex,] 'F1' 'MultiIndex'->00,00,08,04 'F3' | 00,00,00,0F 'Keypad =' | 
+07,3B,00,00,00,4C 'F2' [NoFlag,NoFlag,NormalKey,] ';'
+07,3C,00,00,00,4A 'F3' [NoFlag,NoFlag,NormalKey,] '/'
+07,3D,00,00,00,5D 'F4' [NoFlag,NoFlag,NormalKey,] 'Europe 1'
+07,3E,00,00,00,55 'F5' [NoFlag,NoFlag,NormalKey,] '='
+07,58,00,08,00,95 'Keypad Enter' [NoFlag,VKEY,NormalKey,] 'undef 0x95'
+0C,B6,00,02,01,02 'Green Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'n/a' 'ShiftIndex'->01,02,12,02 'n/a' | 
+0C,E9,00,02,01,01 'Orange Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'F9' 'ShiftIndex'->01,02,22,01 'F9' | 
+
+================================
+ShiftPlane 2
+================================
+07,00,00,00,00,00 'No Event' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,01,00,00,00,00 'Overrun Error' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,02,00,00,00,00 'POST Fail' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,03,00,00,00,00 'Error Undefined' [NoFlag,NoFlag,NormalKey,] 'Overrun Error'
+07,05,00,00,00,54 'b' [NoFlag,NoFlag,NormalKey,] '['
+07,06,00,08,00,24 'c' [NoFlag,VKEY,NormalKey,] 'VK_HOME'
+07,07,00,00,00,5B 'd' [NoFlag,NoFlag,NormalKey,] ']'
+07,0C,00,00,08,04 'i' [NoFlag,NoFlag,ModifierIndex,] 'F3' 'ModifierKey'->08,02,01,14 'Left Control' | 
+07,17,00,20,00,4A 't' [NoFlag,Shifted,NormalKey,] SHIFT+'/'
+07,1B,00,00,00,41 'x' [NoFlag,NoFlag,NormalKey,] ','
+07,1E,00,01,00,1F '1' [NoFlag,Extended,NormalKey,] extended:'undef 0x1F' 'n/a'
+07,1F,00,08,00,EF '2' [NoFlag,VKEY,NormalKey,] 'undef 0xEF'
+07,20,00,02,04,01 '3' [NoFlag,NoRepeat,MultiKeyIndex,] 'F9' 'MultiIndex'->00,01,00,27 'n/a' | 00,00,00,0B 'F6' | 
+07,21,00,08,00,F7 '4' [NoFlag,VKEY,NormalKey,] 'VK_CRSEL'
+07,22,00,08,00,75 '5' [NoFlag,VKEY,NormalKey,] 'VK_F6'
+07,23,00,08,00,29 '6' [NoFlag,VKEY,NormalKey,] 'VK_SELECT'
+07,24,00,00,00,05 '7' [NoFlag,NoFlag,NormalKey,] 'F1'
+07,25,00,08,00,FB '8' [NoFlag,VKEY,NormalKey,] 'VK_ZOOM'
+07,26,00,00,00,06 '9' [NoFlag,NoFlag,NormalKey,] 'F2'
+07,27,00,08,00,76 '0' [NoFlag,VKEY,NormalKey,] 'VK_F7'
+07,28,00,00,00,5A 'Return' [NoFlag,NoFlag,NormalKey,] 'Return'
+07,29,00,00,00,0E 'Escape' [NoFlag,NoFlag,NormalKey,] '`'
+07,2A,00,00,00,29 'Backspace' [NoFlag,NoFlag,NormalKey,] 'Space'
+07,2B,00,00,04,02 'Tab' [NoFlag,NoFlag,MultiKeyIndex,] 'n/a' 'MultiIndex'->00,00,00,59 'Right Shift' | 00,00,00,0D 'Tab' | 
+07,58,00,08,00,95 'Keypad Enter' [NoFlag,VKEY,NormalKey,] 'undef 0x95'
+0C,B6,00,02,01,02 'Green Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'n/a' 'ShiftIndex'->01,02,12,02 'n/a' | 
+0C,E9,00,02,01,01 'Orange Plane' [NoFlag,NoRepeat,ShiftKeyIndex,] 'F9' 'ShiftIndex'->01,02,22,01 'F9' | 
+
+================================
+          ModifierKeys
+================================
+,01,02,08,59[StickyOnce,NoRepeat,ModifierIndex,] 'Right Shift'
+,00,02,08,58[NoFlag,NoRepeat,ModifierIndex,] 'Caps Lock'
+,01,02,08,11[StickyOnce,NoRepeat,ModifierIndex,] 'Left Alt'
+,01,02,08,14[StickyOnce,NoRepeat,ModifierIndex,] 'Left Control'
+
+================================
+          MultiKeys
+================================
+MultiKey1: ,00,01,00,27[NoFlag,Extended,NormalKey,] extended:'VK_RIGHT' 'n/a' + ,00,00,00,0B[NoFlag,NoFlag,NormalKey,] 'F6' + 
+MultiKey2: ,00,00,00,59[NoFlag,NoFlag,NormalKey,] 'Right Shift' + ,00,00,00,0D[NoFlag,NoFlag,NormalKey,] 'Tab' + 
+MultiKey3: ,00,00,08,02[NoFlag,NoFlag,ModifierIndex,] 'n/a' + ,00,08,00,14[NoFlag,VKEY,NormalKey,] 'VK_CAPITAL' + 
+MultiKey4: ,00,08,00,11[NoFlag,VKEY,NormalKey,] 'VK_CONTROL' + ,00,00,00,15[NoFlag,NoFlag,NormalKey,] 'q' + 
+MultiKey5: ,00,00,08,04[NoFlag,NoFlag,ModifierIndex,] 'F3' + ,00,00,00,0F[NoFlag,NoFlag,NormalKey,] 'Keypad =' + 
+MultiKey6: ,00,00,00,0D[NoFlag,NoFlag,NormalKey,] 'Tab' + ,00,00,00,0D[NoFlag,NoFlag,NormalKey,] 'Tab' + ,00,00,00,0D[NoFlag,NoFlag,NormalKey,] 'Tab' + ,00,00,00,0D[NoFlag,NoFlag,NormalKey,] 'Tab' + ,00,00,00,5A[NoFlag,NoFlag,NormalKey,] 'Return' + 
+
+================================
+          ShiftKeys
+================================
+,22,02,01,01[StickyPersist, LED2,NoRepeat,ShiftKeyIndex,] 'F9'
+,12,02,01,02[StickyPersist, LED1,NoRepeat,ShiftKeyIndex,] 'n/a'
+
+================================
+          Reg Location
+================================
+Drivers\HID\ClientDrivers\ITCKeyboard\Layout\CK3\0001
+
