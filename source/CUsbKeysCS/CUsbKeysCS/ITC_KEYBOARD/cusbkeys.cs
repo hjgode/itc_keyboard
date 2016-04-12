@@ -834,13 +834,13 @@ The 'type' and behaviour of the key is defined by the USBKeyFlags. There are thr
                         iIndex = i;
                         iPlane = p;
                         refUsbKeyStruct = _usbKeysAll[iPlane][iIndex];
-                        continue; //exit for
+                        break;//exit for
                     }
                 }
                 if (iIndex != -1)
                 {
                     iRet = 0;
-                    continue; //exit for
+                    break; //exit for
                 }
             }
             return iRet;
@@ -1575,11 +1575,15 @@ The 'type' and behaviour of the key is defined by the USBKeyFlags. There are thr
         {
             get
             {
+                // reg(hex): 01 02 08 11
                 CUSBkeys.usbKeyStructShort uKey = new CUSBkeys.usbKeyStructShort();
-                uKey.bFlagHigh = CUsbKeyTypes.usbFlagsHigh.StickyLock | CUsbKeyTypes.usbFlagsHigh.LED1;
+                uKey.bFlagHigh = CUsbKeyTypes.usbFlagsHigh.StickyOnce;
                 uKey.bFlagMid = CUsbKeyTypes.usbFlagsMid.NoRepeat;
                 uKey.bFlagLow = CUsbKeyTypes.usbFlagsLow.ModifierIndex;
-                uKey.bIntScan = 0x11;//a PS/2 key CUSBPS2_vals.Cusbps2key.getName(0x11)="Left Alt"
+                uKey.bIntScan = 0x11;
+                // USB HID LeftAlt = 0xE2
+                // 0xA4; //VK_MENU 0x12; VK_LMENU 0xA4; 
+                // 0x11;//a PS/2 key CUSBPS2_vals.Cusbps2key.getName(0x11)="Left Alt"
                 return uKey;
             }
         }

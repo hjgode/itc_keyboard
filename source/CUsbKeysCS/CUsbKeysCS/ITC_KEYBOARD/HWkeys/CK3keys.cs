@@ -3,7 +3,7 @@ namespace ITC_KEYBOARD
 {
     public partial class CUsbHwKeys
     {
-        private static class ck3Keys
+        public static class ck3Keys
         {
             //public struct vkPair
             //{
