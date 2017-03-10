@@ -9,6 +9,8 @@ using System.Windows.Forms;
 
 using ITC_KEYBOARD;
 
+using System.Reflection;
+
 namespace MultiKeyTest1
 {
     public partial class Form1 : Form
@@ -19,7 +21,50 @@ namespace MultiKeyTest1
         {
             InitializeComponent();
             _cusbKeys = new CUSBkeys();
+            fillListStandardKeys();
         }
+
+        void fillListStandardKeys()
+        {
+            comboBox1.Items.Clear();
+            Enum[] vals = EnumToArray(new ITC_KEYBOARD.HardwareKeys.AllKeys());
+            foreach (object o in vals)
+            {
+                if(o.ToString().Contains("Standard"))
+                    comboBox1.Items.Add(o);
+            }
+            comboBox1.SelectedIndex = 0;
+
+            comboBox2.Items.Clear();
+            Enum[] planesList = EnumToArray(new ITC_KEYBOARD.cPlanes.plane());
+            foreach (object o in planesList)
+            {
+                comboBox2.Items.Add(o);
+            }
+            comboBox2.SelectedIndex = 0;
+        }
+
+        public Enum[] EnumToArray(Enum enumeration)
+        {
+            //get the enumeration type
+            Type et = enumeration.GetType();
+
+            //get the public static fields (members of the enum)
+            System.Reflection.FieldInfo[] fi = et.GetFields(BindingFlags.Static | BindingFlags.Public);
+
+            //create a new enum array
+            Enum[] values = new Enum[fi.Length];
+
+            //populate with the values
+            for (int iEnum = 0; iEnum < fi.Length; iEnum++)
+            {
+                values[iEnum] = (Enum)fi[iEnum].GetValue(enumeration);
+            }
+
+            //return the array
+            return values;
+        }
+
         void initKeys()
         {
 
@@ -60,6 +105,46 @@ namespace MultiKeyTest1
             uKey.bFlagLow = CUsbKeyTypes.usbFlagsLow.NormalKey;
             uKey.bIntScan = (byte)vKey;
             return uKey;
+        }
+
+        public void createMultiKey2(byte bKeyToMap, int iPlaneToUse)
+        {
+            CUSBkeys.usbKeyStructShort[] uKey;// = new CUSBkeys.usbKeyStructShort[sTest.Length];
+            List<CUSBkeys.usbKeyStructShort> uKeys = new List<CUSBkeys.usbKeyStructShort>();
+
+            uKeys.Add(getUSBvkey(VKEY.VK_RETURN));
+            uKeys.Add(getUSBvkey(VKEY.VK_F1));
+            uKeys.Add(getUSBvkey(VKEY.VK_F));
+            uKeys.Add(getUSBvkey(VKEY.VK_D));
+            uKeys.Add(getUSBvkey(VKEY.VK_RETURN));
+
+            uKey = uKeys.ToArray();
+            //try to find existing MultiKey
+            CMultiKeys cmulti = new CMultiKeys();
+            int iMax = cmulti.getMultiKeyCount();
+            int iFoundMultikeyEntry = cmulti.findMultiKey(uKey);
+            if (iFoundMultikeyEntry == -1)//if there was no existing entry, create a new one
+            {
+                //not found, then add new entry
+                iFoundMultikeyEntry = cmulti.addMultiKey(uKey);
+
+            }
+            //map the key to the new found multikey index
+            setKeyToMultiKey((int)bKeyToMap, (byte)(iFoundMultikeyEntry), (ITC_KEYBOARD.cPlanes.plane)iPlaneToUse);
+
+            //save and update
+            int iResWrite = _cusbKeys.writeKeyTables();
+            if (iResWrite == -1)
+            {
+                MessageBox.Show("Change needs a reboot");
+            }
+            else if (iResWrite == -2)
+            {
+                MessageBox.Show("Internal Error. Contact author.");
+            }
+            else
+                MessageBox.Show("Mapped key " + ((ITC_KEYBOARD.HardwareKeys.CK70Keys)bKeyToMap).ToString() + " in plane " + ((ITC_KEYBOARD.cPlanes.plane)iPlaneToUse).ToString() + " to MultiKey: " + iFoundMultikeyEntry.ToString());
+            textBox1.Focus();
         }
 
         /// <summary>
@@ -123,7 +208,8 @@ namespace MultiKeyTest1
                 MessageBox.Show("Internal Error. Contact author.");
             }
             else
-                MessageBox.Show("Mapped key " + bKeyToMap.ToString() + " in plane " + (ITC_KEYBOARD.cPlanes.plane)iPlaneToUse + " to ALT+F4");
+                MessageBox.Show("Mapped key " + ((ITC_KEYBOARD.HardwareKeys.CK70Keys)bKeyToMap).ToString() + " in plane " + ((ITC_KEYBOARD.cPlanes.plane)iPlaneToUse).ToString() + " to MultiKey: " + iFoundMultikeyEntry.ToString());
+            textBox1.Focus();
         }
 
         /// <summary>
@@ -153,7 +239,7 @@ namespace MultiKeyTest1
             if (_cusbKeys.getKeyStruct((int)cPlane, iKey, ref remapKey) != -1)
             {   //key exists
                 remapKey.bFlagHigh = CUsbKeyTypes.usbFlagsHigh.NoFlag;
-                remapKey.bFlagMid = CUsbKeyTypes.usbFlagsMid.NoRepeat;
+                remapKey.bFlagMid = CUsbKeyTypes.usbFlagsMid.NoRepeat | CUsbKeyTypes.usbFlagsMid.NoChord;
                 remapKey.bFlagLow = CUsbKeyTypes.usbFlagsLow.MultiKeyIndex;
                 remapKey.bIntScan = (byte)(iMultiIndex + 1); //the idx is zero based! but it is Multi1, Multi2...
 
@@ -186,6 +272,16 @@ namespace MultiKeyTest1
                 else
                     MessageBox.Show("Error. Missing Keyboard CPL?");
 
+        }
+
+        private void btnMap2EnterF1FDEnter_Click(object sender, EventArgs e)
+        {
+            createMultiKey2((byte)ITC_KEYBOARD.HardwareKeys.AllKeys.ITC_Standard_Period_Key, (int)ITC_KEYBOARD.cPlanes.plane.orange);
+            //ITC_KEYBOARD.HardwareKeys.AllKeys theKey = (ITC_KEYBOARD.HardwareKeys.AllKeys)(comboBox1.SelectedItem);
+            //int iKey = (int)theKey;
+            //ITC_KEYBOARD.cPlanes.plane thePlane = (ITC_KEYBOARD.cPlanes.plane)(comboBox2.SelectedItem);
+            //int iPlane = (int)thePlane;
+            //createMultiKey2((byte)iKey, iPlane);
         }
     }
 

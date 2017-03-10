@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapFKeys12", "..\MapFKeys12
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiKeyTest1", "..\MultiKeyTest1\MultiKeyTest1.csproj", "{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapF1toCtrl-A", "..\MapF1toCtrl-A\MapF1toCtrl-A.csproj", "{95148C53-AF37-473A-85FC-ED6C0A9B61A5}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -107,11 +109,15 @@ Global
 		{AD8B827B-5837-4178-9310-F1B694F9EA62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AD8B827B-5837-4178-9310-F1B694F9EA62}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD8DAD0E-FBB3-4F38-973C-E2F167C44188}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95148C53-AF37-473A-85FC-ED6C0A9B61A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
