@@ -52,6 +52,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapF1toCtrl-A", "..\MapF1to
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapF5toCtrl-L", "..\MapF5toCtrl-L\MapF5toCtrl-L.csproj", "{1A10E297-9D1C-4556-B5C0-42021F786FF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapF1-F5toMultikeys", "..\MapF1-F5toMultikeys\MapF1-F5toMultikeys.csproj", "{F2AE031D-73A6-404B-BC71-BA05B509BC90}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -124,6 +126,12 @@ Global
 		{1A10E297-9D1C-4556-B5C0-42021F786FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A10E297-9D1C-4556-B5C0-42021F786FF5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A10E297-9D1C-4556-B5C0-42021F786FF5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2AE031D-73A6-404B-BC71-BA05B509BC90}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
